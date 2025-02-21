@@ -1,0 +1,24 @@
+{
+  "name": "excelquery",
+  "version": "1.0.0",
+  "description": "read sheet and transform sql query",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "npx tsc ./src/main.ts --outDir ./dist/",
+    "dev": "npx ts-node ./src/main.ts"
+  },
+  "author": "Agustin Comba",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.0.1",
+    "xlsx-populate": "^1.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "@types/xlsx-populate": "git+https://github.com/JanLoebel/types-xlsx-populate.git"
+  }
+}
